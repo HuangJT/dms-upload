@@ -15,11 +15,6 @@
 > yarn
 ```
 
-### 配置Redis
-```bash
-# vim app/util/constants.js
-```
-
 ### 启动
 ```bash
 > yarn dev
