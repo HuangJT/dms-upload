@@ -3,7 +3,7 @@
 [![issue](https://img.shields.io/github/issues/win-winFE/dms-upload.svg)](https://github.com/win-winFE/dms-upload)
 [![license](https://img.shields.io/github/license/win-winFE/dms-upload.svg)](https://github.com/win-winFE/dms-upload)
 
-## DMS-API
+## DMS-UPLOAD
 
 **用于接受DMS的动态表单上传文件**
 
