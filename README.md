@@ -9,16 +9,7 @@
 
 ## 使用
 
-### 安装
-```bash
-> git clone https://github.com/win-winFE/dms-upload.git
-> yarn
-```
-
-### 启动
-```bash
-> yarn dev
-```
+**见 [dms](https://github.com/win-winFE/dms)**
 
 ## 参与贡献
 
