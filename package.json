@@ -29,7 +29,7 @@
     "node": ">=8.9.0"
   },
   "scripts": {
-    "start": "egg-scripts start --daemon --title=egg-server-dms-upload --port=8080",
+    "start": "egg-scripts start --daemon --title=egg-server-dms-upload --port=7100",
     "stop": "egg-scripts stop --title=egg-server-dms-upload",
     "dev": "egg-bin dev --port=7100",
     "debug": "egg-bin debug",
