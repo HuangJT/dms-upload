@@ -58,8 +58,9 @@ module.exports = appInfo => {
 
   // CDN服务器目录
   config.cdnDir = '/usr/local/services/cdn/dms';
-  // 需更换为cdn前缀
-  config.cdnPrefix = '//cdn-example.com/dms';
+  // 需更换为cdn前缀，测试时可以使用python启服务
+  // python3：cd /usr/local/services/cdn && python3.7 -m http.server 5000
+  config.cdnPrefix = '//127.0.0.1:5000/dms';
 
   config.middleware = [];
 
