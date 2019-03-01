@@ -1,7 +1,7 @@
 {
   "name": "dms-upload",
-  "version": "0.1.0",
-  "description": "用于接受DMS动态表单上传的文件",
+  "version": "0.1.1",
+  "description": "用于接受DMS动态表单上传的文件以及存储数据到CDN",
   "private": false,
   "dependencies": {
     "crypto-js": "^3.1.9-1",
