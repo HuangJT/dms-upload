@@ -47,13 +47,15 @@ class PutController extends Controller {
     try {
       fs.writeFileSync(`${config.cdnDir}/data/${fileName}`, data, 'utf8');
       const fileUrl = `${config.cdnPrefix}/data/${fileName}`;
-      // Azure CDN刷新
-      const refresh = await refreshRes(fileUrl);
-      if (refresh) {
-        ctx.body = response.success(fileUrl);
-        return;
-      }
-      ctx.body = response.simpleError(`CDN刷新失败，请手动刷新:${fileUrl}`);
+      // Azure CDN刷新，不验证刷新情况（azure接口不稳定）
+      await refreshRes(fileUrl);
+      ctx.body = response.success(fileUrl);
+      // const refresh = await refreshRes(fileUrl);
+      // if (refresh) {
+      //   ctx.body = response.success(fileUrl);
+      //   return;
+      // }
+      // ctx.body = response.simpleError(`CDN刷新失败，请手动刷新:${fileUrl}`);
     } catch (e) {
       console.error(e);
     }
