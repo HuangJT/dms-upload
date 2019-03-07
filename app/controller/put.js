@@ -7,7 +7,7 @@ const pump = require('mz-modules/pump');
 
 const response = require('../util/response');
 const { md5 } = require('../util/utils');
-const { refreshRes } = require('../util/azure');
+// const { refreshRes } = require('../util/azure');
 
 class PutController extends Controller {
   async putFileByPath() {
@@ -48,7 +48,7 @@ class PutController extends Controller {
       fs.writeFileSync(`${config.cdnDir}/data/${fileName}`, data, 'utf8');
       const fileUrl = `${config.cdnPrefix}/data/${fileName}`;
       // Azure CDN刷新，不验证刷新情况（azure接口不稳定）
-      await refreshRes(fileUrl);
+      // await refreshRes(fileUrl);
       ctx.body = response.success(fileUrl);
       // const refresh = await refreshRes(fileUrl);
       // if (refresh) {
