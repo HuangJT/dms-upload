@@ -21,6 +21,6 @@
 
 ### 说明
 
-* 本项目出自[win-winFE团队](https://github.com/win-winFE)，如有任何疑问，请扫下面二维码加入我们的微信群
+* 本项目出自[win-winFE团队](https://github.com/win-winFE)，如有任何疑问，请扫下面二维码加入我们的QQ群
 
-<img src="https://github.com/win-winFE/dms/blob/master/qrcode.png" width="240px" height="240px" />
+<img src="https://github.com/win-winFE/dms/blob/master/qrcode.jpeg" width="240px" />
